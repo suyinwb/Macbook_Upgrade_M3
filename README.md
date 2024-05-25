@@ -14,7 +14,8 @@ Quick and fastest transfer method while maintaining BAU. Most importantly, all t
 
 ## Files transfer
 
-Firstly I used Migration Assistant to transfer all files from old Macbook to new Macbook.[Instructions here](https://support.apple.com/en-ca/102613)
+Firstly I used Migration Assistant to transfer all files from old Macbook to new Macbook.
+[Instructions here](https://support.apple.com/en-ca/102613)
 
 This is done through regular wi-fi overnight and completed in 4 hours. Note: When this is happening, both Macbooks are locked and cannot be use.
 
