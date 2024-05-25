@@ -5,35 +5,41 @@
 Updating from old Macbook to Macbook M3 2023.
 
 
+
 ## Overview of Project
 
 ### Purpose
 
 Quick and fastest transfer method while maintaining BAU. Most importantly, all the files must be transfered and codes & scripts must work without any downtime.
 
+## Files transfer
 
+Firstly I used Migration Assistant to transfer all files from old Macbook to new Macbook.[Instructions here](https://support.apple.com/en-ca/102613)
+
+This is done through regular wi-fi overnight and completed in 4 hours. Note: When this is happening, both Macbooks are locked and cannot be use.
+
+## Coding Environment Updates
+
+MOST IMPORTANT!
+Update Xcode using App Store first.
+
+Uninstall homebrew:
 ```
-# =========================================================================
-# Continous Scroll To The End Of Page
-# =========================================================================
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+```
 
-time.sleep(30)
+Install homebrew (follow the instructions on the screen):
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-SCROLL_PAUSE_TIME = 30
+Rosetta 2 is a dynamic binary translator developed by Apple, designed to enable Apple Silicon Macs (which use ARM-based processors such as the M1 and M2 series) to run software that was originally built for Intel-based Macs (which use x86-64 architecture):
+```
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+```
 
-# Get scroll height
-last_height = driver.execute_script("return document.body.scrollHeight")
-
-while True:
-    # Scroll down to bottom
-    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
-    # Wait to load page
-    time.sleep(SCROLL_PAUSE_TIME)
-
-    # Calculate new scroll height and compare with last scroll height
-    new_height = driver.execute_script("return document.body.scrollHeight")
-    if new_height == last_height:
-        break
-    last_height = new_height
+Check brew:
+```
+brew doctor
+brew config
 ```
