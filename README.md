@@ -90,3 +90,5 @@ Using anaconda-clean to clean up the environment. I said yes to all the cleanup 
 conda install anaconda-clean
 anaconda-clean
 ```
+
+NOTE: I don't mind anaconda as jupyter will require a kernel to run after all but I really didn't want the anaconda-navigator. 
