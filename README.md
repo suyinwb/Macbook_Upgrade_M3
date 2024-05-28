@@ -2,7 +2,7 @@
 
 ## Background
 
-Updating from old Macbook to Macbook M3 2023.
+Updating from old Macbook Intel Core i7 to Macbook M3 2023.
 
 
 
@@ -43,4 +43,50 @@ Check brew and update any packages that are deprecated:
 ```
 brew doctor
 brew config
+```
+
+Install the necessary packages:
+```
+brew install python
+
+brew install pipx
+pipx ensure path
+
+brew install jupyter
+```
+
+
+REPEAT FOR ALL CONDA ENVIRONMENTS:
+
+==start==
+
+```
+conda activate <env>
+
+conda activate /Users/vuvie/opt/anaconda3/envs/mlenv
+
+pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
+
+conda activate /Users/vuvie/opt/anaconda3/envs/PythonData
+
+pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
+```
+
+==end==
+
+Install chrome driver:
+```
+brew install chrome driver
+```
+
+I want to uninstall anaconda-navigator as I had it in the old Macbook but I don't care about it so I don't need it in my new M3 environment:
+```
+conda install anaconda-navigator
+conda remove anaconda-navigator
+```
+
+Using anaconda-clean to clean up the environment. I said yes to all the cleanup the prompts asked:
+```
+conda install anaconda-clean
+anaconda-clean
 ```
