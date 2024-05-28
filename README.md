@@ -56,10 +56,8 @@ brew install jupyter
 ```
 
 
-REPEAT FOR ALL CONDA ENVIRONMENTS:
-
-==start==
-
+REPEAT FOR ALL CONDA ENVIRONMENTS
+These commands will recursively pip update all the packages within each environment:
 ```
 conda activate <env>
 
@@ -72,7 +70,6 @@ conda activate /Users/vuvie/opt/anaconda3/envs/PythonData
 pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
 ```
 
-==end==
 
 Install chrome driver:
 ```
@@ -91,4 +88,4 @@ conda install anaconda-clean
 anaconda-clean
 ```
 
-NOTE: I don't mind anaconda as jupyter will require a kernel to run after all but I really didn't want the anaconda-navigator. 
+NOTE: I don't mind anaconda as jupyter will require a kernel to run after all but I really didn't want the anaconda-navigator.
