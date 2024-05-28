@@ -1,4 +1,4 @@
-# Upgrading from a 10 year old Macbook Air to Macbook Air M3
+# Upgrading from a 10 year old Macbook Air Intel Core i7 (2013) to Macbook Air M3 (2024)
 
 ## Background
 
@@ -39,7 +39,7 @@ Rosetta 2 is a dynamic binary translator developed by Apple, designed to enable 
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 ```
 
-Check brew:
+Check brew and update any packages that are deprecated:
 ```
 brew doctor
 brew config
