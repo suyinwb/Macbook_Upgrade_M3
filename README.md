@@ -89,3 +89,22 @@ anaconda-clean
 ```
 
 NOTE: I don't mind anaconda as jupyter will require a kernel to run after all but I really didn't want the anaconda-navigator.
+
+
+
+## APPENDIX
+
+The following commands will get you the IP address list to find public IP addresses for your machine:
+
+```
+curl ifconfig.me
+curl -4/-6 icanhazip.com
+curl ipinfo.io/ip
+curl api.ipify.org
+curl checkip.dyndns.org
+dig +short myip.opendns.com @resolver1.opendns.com
+host myip.opendns.com resolver1.opendns.com
+curl ident.me
+curl bot.whatismyipaddress.com
+curl ipecho.net/plain
+```
