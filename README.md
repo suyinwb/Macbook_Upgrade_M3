@@ -94,6 +94,11 @@ NOTE: I don't mind anaconda as jupyter will require a kernel to run after all bu
 
 ## APPENDIX
 
+Follow this guide to install CLI anaconda
+
+https://docs.anaconda.com/anaconda/install/
+
+
 The following commands will get you the IP address list to find public IP addresses for your machine:
 
 ```
