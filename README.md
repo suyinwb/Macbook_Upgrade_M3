@@ -58,15 +58,21 @@ brew install jupyter
 
 REPEAT FOR ALL CONDA ENVIRONMENTS
 These commands will recursively pip update all the packages within each environment:
-```
+
 conda activate <env>
+``
 
+```
 conda activate /Users/vuvie/opt/anaconda3/envs/mlenv
-
+```
+```
 pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
+```
 
+```
 conda activate /Users/vuvie/opt/anaconda3/envs/PythonData
-
+```
+```
 pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
 ```
 
