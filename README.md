@@ -50,7 +50,7 @@ Install the necessary packages:
 brew install python
 
 brew install pipx
-pipx ensure path
+pipx ensurepath
 
 brew install jupyter
 ```
