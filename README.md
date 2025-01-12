@@ -106,7 +106,13 @@ brew install plantuml
 
 Download the latest plantuml[].dotm file and plantuml[].jar files.
 
-Put these 2 files into the Microsoft Word startup folder. The default location of the Microsoft Word startup folder for Mac is: 
+Dotm file:
+https://github.com/plantuml/word-template/tree/master
+
+Jar file (GPL v2):
+https://plantuml.com/en/download
+
+Put these 2 files into the Microsoft Word startup folder. The default location of the Microsoft Word startup folder for Mac is:
 ```
 ~/Library/Group Containers/UBF8T346G9.Office/User Content/Startup/Word
 ```
