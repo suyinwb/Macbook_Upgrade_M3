@@ -112,6 +112,9 @@ Then create a plantuml diagram with their markup language in a file called: puml
 
 Key: Option+D
 
+### Exporting the current Diagram
+cmd: >PlantUML: Export Current Diagram
+
 ## Add into MS Word 365 - Does NOT WORK
 Download the latest plantuml[].dotm file and plantuml[].jar files.
 
