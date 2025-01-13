@@ -97,13 +97,18 @@ anaconda-clean
 NOTE: I don't mind anaconda as jupyter will require a kernel to run after all but I really didn't want the anaconda-navigator.
 
 
-## Adding PlantUML to Microsoft Word 365
+## Adding PlantUML to Visual Studio Code
 
 ```
+brew install java
 brew install graphviz
 brew install plantuml
 ```
 
+in Visual Studio Code Marketplace: install PlantUML by jebbs.
+Then create a plantuml diagram with their markup language in a file called: puml or wsd. 
+
+## Add into MS Word 365 - Does NOT WORK
 Download the latest plantuml[].dotm file and plantuml[].jar files.
 
 Dotm file:
