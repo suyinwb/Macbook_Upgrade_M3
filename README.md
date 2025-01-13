@@ -106,7 +106,11 @@ brew install plantuml
 ```
 
 in Visual Studio Code Marketplace: install PlantUML by jebbs.
-Then create a plantuml diagram with their markup language in a file called: puml or wsd. 
+Then create a plantuml diagram with their markup language in a file called: puml or wsd.
+
+### Generate Diagram Preview in VSCode
+
+Key: Option+D
 
 ## Add into MS Word 365 - Does NOT WORK
 Download the latest plantuml[].dotm file and plantuml[].jar files.
